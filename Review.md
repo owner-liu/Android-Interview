@@ -70,7 +70,7 @@ Android默认的色彩模式为ARGB_8888
 
   > 如果D所需的任务栈为S1,并且当前任务栈S1的情况为ADBC,根据栈内复用原则，此时D不会重新创建，系统会把D切换到栈顶并调用其onNewIntent方法，同时由于**singleTask默认具有clearTop的效果**，会导致栈内所有在D上面的Activity全部出栈，于是最终S1中的情况为AD.
 
-4. singleInstance：单实例模式。除了具有singleTask模式的所有特性外，具有此种模式的Activity**只能单独地位于一个任务栈中**。
+4. singleInstance：单实例模式。除了具有singleTask模式的所有特性外，具有此种模式的Activity**只能单独地位于一个任务栈中**。（呼叫来电界面）
 
 Activity所需的任务栈，与TaskAffinity参数相关，默认情况下，所有Activity所需的任务栈的名字为应用的包名。另外任务栈分为前台任务栈和后台任务栈。
 
